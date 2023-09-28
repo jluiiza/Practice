@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<title>Mídias em HTML5</title>
+</head>
+<body>
+	<h1>Imagens dinâmicas</h1>
+		<p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+		<picture> <!-- max-width = máximo de largura suportado pra exibir tal imagem, configurada no srcset; colocar tamanho em px de forma que não seja possível exibir a barra de rolagem lateral, mídia responsiva -->
+			<source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+			<source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+			<source media="(max-width: 1250px)" srcset="imagens/foto-g.png" type="image/png">
+			<img src="imagens/foto-xg.png" alt="Imagem flexível">
+		</picture>
+
+	<h1>Reproduzindo áudio</h1>
+		<p>Vamos aprender a reproduzir áudios em HTML5</p>
+		<audio preload="metadata" controls autoplay>
+			<source src="midia/everglow-patrick-patrikios.mp3" type="audio/mpeg">
+			<source src="midia/everglow-patrick-patrikios.ogg" type="audio/ogg">
+			<source src="midia/everglow-patrick-patrikios.wav" type="audio/wav"> </source>
+			<p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+		</audio>
+
+	<h1>Inserindo vídeos hospedados localmente</h1>
+		<p>Este vídeo está hospedado no próprio servidor.</p>
+		<video width="560" poster="midia/home-office-3.png" controls>
+			<source src="midia/video-2.m4v" type="video/m4v">
+			<source src="midia/video-3.webm" type="video/webm">
+			<source src="midia/video.mp4" type="video/mp4">
+			<source src="midia/video-4.ogv" type="video/ogv">
+			<p>Seu navegador não tem compatibilidade com reprodução de videos.</p>
+		</video>
+
+	<h1>Inserindo vídeos do youtube</h1>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/KFk2iyz92q0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

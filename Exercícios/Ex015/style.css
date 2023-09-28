@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(171, 238, 162);
+    font: normal 0.9em Helvetica, Verdana, sans-serif;
+}
+
+h1 {
+    color: rgb(10, 150, 65);
+    font-size: 1.5em;
+}
+
+h1#principal { /* ou apenas #principal*/
+    text-align: center;
+    background-color: rgb(10, 150, 65);
+    color: seashell;
+    font-size: 2em;
+}
+
+h2 {
+    color: rgb(97, 179, 65);
+    font-size: 1.2em;
+}
+
+.basico {
+    color: black;
+    font-weight: bolder;
+}
+
+.interm {
+    color: grey;
+    font-weight: bolder;
+}
+
+.avanc {
+    color:green;
+    font-weight: bolder;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        a {
+            color: rgb(216, 101, 101);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color:greenyellow; 
+        }
+
+        a:active {
+            color:indigo;
+        }
+
+        a::before {
+            content: "» ";
+        }
+
+        a::after {
+            content: " «";
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a target="_blank" rel="external" href="https://github.com/jluiiza">Repositório GitHub</a></li>
+        <li><a target="_blank" rel="external" href="https://www.youtube.com/channel/UCa4pmCkoYueGNN2Ryu_JJCg">Canal do Youtube</a></li>
+        <li><a target="_blank" rel="external" href="http://127.0.0.1:5500/[JL]%20ConfeitApp/html-css/index.html">Site do ConfeitApp</a></li>
+    </ul>
+</body>
+</html>
